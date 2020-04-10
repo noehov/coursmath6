@@ -1,2 +1,5 @@
-# coursmath6
-Repository du cours de 6ème option math
+# Exercices de mathématiques
+
+* Intégrales et primitives
+* Coniques
+* Probabilités
