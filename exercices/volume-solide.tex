@@ -16,7 +16,7 @@
 \date{}
 \maketitle
 
-\section{Exercice 30 (p. 154): calculer le volume d'un solide}\vspace{0.2cm}
+\section*{Exercice 30 (p. 154) : calculer le volume d'un solide}\vspace{0.2cm}
 
 %----------------------------------------------------------------------------------------------------------------------------------------
 \flushleft \textbf{a.1) Établir la formule permettant de calculer le volume d'un cylindre droit de rayon \textit{R} et de hauteur \textit{h}}
@@ -48,6 +48,8 @@ De ce fait,
 
 $$\pi \times \int\limits_a^b R^2 dx = \pi \times R^2 \times h$$
 
+\center{cqfd.}
+
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
 \flushleft \textbf{a.2) Établir la formule permettant de calculer le volume d'une sphère de rayon \textit{R}}
@@ -76,6 +78,8 @@ $$F(R)-F(-R)=\left[R^3-{R^3\over{3}}\right]-\left[-R^3+{R^3\over{3}}\right]=2R^3
 De ce fait,
 
 $$\pi\times\int\limits_{-R}^R({R^2-x^2})dx = \pi\times{4R^3\over{3}}$$
+
+\center{cqfd.}
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
@@ -114,6 +118,8 @@ $$F(h)-F(0)={R^2h^3\over{3}h^2}-{R^2h^2\over{h}}+R^2h={R^2h\over{3}}-R^2h+R^2h={
 De ce fait,
 
 $$\pi\times\int\limits_0^h({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2)dx=\pi\times{R^2h\over{3}}$$
+
+\center{cqfd.}
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
@@ -215,7 +221,70 @@ $$=\pi\times\left[2aR^2\pi\right]$$
 
 $$=2aR^2\pi^2$$
 
-\flushleft \textbf{e. Un \textit{segment sphérique} est une portion de sphère coupée par deux plans parallèles. Montrer que le volume $V$ du segment sphérique de largueur h et de rayon $a$ et $b$, engendré par la rotation autour de l'axe $Ox$ de la surface est donné par $\displaystyle{V={\pi h^3\over{6}}+{\pi h(a^2+b^2)\over{2}}}$} \vspace{0.5cm}
+\center{cqfd.}
+
+\flushleft \textbf{e. Un \textit{segment sphérique} est une portion de sphère coupée par deux plans parallèles. Montrer que le volume $V$ du segment sphérique de largueur h et de rayon $a$ et $b$, engendré par la rotation autour de l'axe $Ox$ de la surface est donné par}
+$$\displaystyle{V={\pi h^3\over{6}}+{\pi h(a^2+b^2)\over{2}}}$$
+Afin de réaliser cet exercice, j'ai utilisé les sources suivantes:
+\begin{center}
+mathworld.wolfram.com/SphericalSegment.html et http://ambrsoft.com/TrigoCalc/Sphere/Cap/SphereCap.html
+\end{center}
+La technique de démonstration diffère de celle qui nous est demandée dans le livre, mais le résultat reste le même. Seules l'orientation de la figure et l'intégrale sont changées et, au lieu de pivoter autour de l'axe $Ox$, la surface pivote autour de l'axe $Oy$.
+\begin{figure}[h]
+    \textit{\caption{}}\vspace{0.2cm}
+    \centering
+    \includegraphics[width=6.5cm, height=6.5cm]{assets/ex30-e-schema.png}
+\end{figure}
+\begin{center}
+Appelons $R$ le rayon de la sphère et $h$ la hauteur du segment. 
+
+Le rayon des cercles supérieur et inférieur sont appelés respectivement $a$ et $b$. 
+
+Appelons $d$ la distance entre le centre de la sphère et le plus grand diamètre du segment. 
+
+Le rayon qui est parallèle au segment est appelé $r$ tandis que la hauteur qui les distingue est appelée $y$.
+
+Nous pouvons déjà poser, grâce au théorème de Pythagore, $r^2 = R^2-y^2$
+\end{center}
+$$V=\int\limits_d^{d+h} \pi r^2 dy$$
+$$=\pi \times \int\limits_d^{d+h} (R^2-y^2)dy$$
+$$=\pi \times \left[ R^2 y - {y^3\over{3}}\right]_d^{d+h} $$
+$$=\pi \times \left[ \left( R^2(d+h) - {(d+h)^3\over{3}} \right) - \left( R^2d - {d^3\over{3}} \right) \right]$$
+$$=\pi \times \left[ R^2h - {1\over{3}} \left( d^3+3d^2h+3dh^2+h^3-d^3 \right) \right]$$
+$$=\pi h \times \left( R^2-d^2-hd-{h^2\over{3}} \right)$$\vspace{0.1cm}
+
+Grâce à Pythagore, nous pouvons trouver certaines égalités:
+
+$$a=\sqrt{R^2-d^2}$$
+$$b=\sqrt{R^2-(d+h)^2} = \sqrt{R^2-d^2-2dh-h^2}$$
+$$d={a^2-b^2-h^2\over{2h}}$$
+$$R= \sqrt{{[(a-b)^2+h^2][(a+b)^2+h^2]\over{4h^2}}}$$\vspace{0.1cm}
+
+Remplacer ces paramètres nous donne:
+
+$$V = \pi h \times \left[{1\over{2}}(a^2+b^2+h^2)-{1\over{3}}h^2 \right]$$
+$$= \pi h \times \left( {1\over{2}}a^2 + {1\over{2}}b^2 + {1\over{6}}h^2 \right)$$
+$$={1\over{6}} \pi h \times (3a^2 + 3b^2 + h^2 )$$
+$$={\pi h^3\over{6}} + {\pi h (a^2+b^2)\over{2}}$$
+
+\center{cqfd.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
