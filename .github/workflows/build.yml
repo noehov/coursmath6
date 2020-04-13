@@ -12,13 +12,13 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@master
         with:
-          root_file: volume-solide.tex
+          root_file: integrales-coniques-p154-161-232.tex
           working_directory: exercices
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
           name: exercices
-          path: exercices/volume-solide.pdf
+          path: exercices/integrales-coniques-p154-161-232.pdf
       - name: Create release
         id: create_release
         uses: actions/create-release@v1
@@ -36,6 +36,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./exercices/volume-solide.pdf
-          asset_name: volume-solide.pdf
+          asset_path: ./exercices/integrales-coniques-p154-161-232.pdf
+          asset_name: integrales-coniques-p154-161-232.pdf
           asset_content_type: application/pdf
