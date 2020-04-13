@@ -59,7 +59,7 @@ $$\pi \times \int\limits_a^b R^2 dx = \pi \times R^2 \times h$$
     \centering
     \includegraphics[width=8cm, height=6cm]{assets/ex30-a2-schema.png}
 \end{figure}
-$$\pi\times\int\limits_a^b(f(x))^2dx = \pi\times\int\limits_{-R}^R[\sqrt{R^2-x^2}]^2dx=\pi\times\int\limits_{-R}^R({R^2-x^2})dx$$\vspace{0.01cm}
+$$\pi\times\int\limits_a^b(f(x))^2dx = \pi\times\int\limits_{-R}^R\left(\sqrt{R^2-x^2}\right)^2dx=\pi\times\int\limits_{-R}^R({R^2-x^2})dx$$\vspace{0.01cm}
 
 Intéressons-nous à l'intégrale définie\vspace{0.2cm}
 
@@ -95,17 +95,17 @@ Nous savons que $f(a)=f(0)=R$ et que $f(b)=f(h)=0$\vspace{0.5cm}
 
 La fonction se présente donc sous la forme $\displaystyle{f(x)={y_b-y_a\over{x_b-x_a}}\times{x+R}}$, ce qui revient à $\displaystyle{f(x)={-Rx\over{h}}+R}$\vspace{0.2cm}
 
-$$\pi\times\int\limits_a^b(f(x))^2dx=\pi\times\int\limits_0^h({-Rx\over{h}}+R)^2dx=\pi\times\int\limits_0^h({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2)dx$$\vspace{0.01cm}
+$$\pi\times\int\limits_a^b(f(x))^2dx=\pi\times\int\limits_0^h\left({-Rx\over{h}}+R\right)^2dx=\pi\times\int\limits_0^h\left({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2\right)dx$$\vspace{0.01cm}
 
 Intéressons-nous à l'intégrale définie\vspace{0.2cm}
 
 \begin{center}
-$\displaystyle{\int\limits_0^h({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2)dx = F(h)-F(0})$ \textit{ssi} $F(x)$ est une primitive de $\displaystyle{({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2)}$\vspace{0.01cm}
+$\displaystyle{\int\limits_0^h\left({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2\right)dx = F(h)-F(0})$ \textit{ssi} $F(x)$ est une primitive de $\displaystyle{\left({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2\right)}$\vspace{0.01cm}
 \end{center}
 
 Afin de trouver $F(x)$, il faut résoudre l'intégrale indéfinie\vspace{0.2cm}
 
-$$\int({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2)dx={R^2x^3\over{3}h^2}-{R^2x^2\over{h}}+R^2x+c$$\vspace{0.01cm}
+$$\int\left({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2\right)dx={R^2x^3\over{3}h^2}-{R^2x^2\over{h}}+R^2x+c$$\vspace{0.01cm}
 
 En choisissant arbitrairement
 
@@ -117,7 +117,7 @@ $$F(h)-F(0)={R^2h^3\over{3}h^2}-{R^2h^2\over{h}}+R^2h={R^2h\over{3}}-R^2h+R^2h={
 
 De ce fait,
 
-$$\pi\times\int\limits_0^h({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2)dx=\pi\times{R^2h\over{3}}$$
+$$\pi\times\int\limits_0^h\left({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2\right)dx=\pi\times{R^2h\over{3}}$$
 
 \center{cqfd.}
 
@@ -152,11 +152,11 @@ Pour réaliser cet exercice, nous avons besoin des fonctions $f(x)=\sqrt{R^2-x^2
 \end{figure}
 
 
-\hspace{0.8cm} Afin de trouver le volume du tore construit par ces deux fonctions, j'ai réalisé le calcul suivant:\vspace{0.2cm}
+\begin{center}Afin de trouver le volume du tore formé par la révolution de ces deux fonctions, j'ai réalisé le calcul suivant:\end{center}\vspace{0.2cm}
 
-$$\pi\times\int\limits_{-R}^R(\sqrt{R^2-x^2}+a)^2dx - \pi\times\int\limits_{-R}^R(-\sqrt{R^2-x^2}+a)^2dx$$
+$$\pi\times\int\limits_{-R}^R\left(\sqrt{R^2-x^2}+a\right)^2dx - \pi\times\int\limits_{-R}^R\left(-\sqrt{R^2-x^2}+a\right)^2dx$$
 
-$$=\pi\times\left[\left(\int\limits_{-R}^R (a^2+2a\sqrt{R^2-x^2}+R^2-x^2)dx\right)-\left(\int\limits_{-R}^R (a^2-2a\sqrt{R^2-x^2}+R^2-x^2)dx\right)\right]$$
+$$=\pi\times\left[\left(\int\limits_{-R}^R \left(a^2+2a\sqrt{R^2-x^2}+R^2-x^2\right)dx\right)-\left(\int\limits_{-R}^R \left(a^2-2a\sqrt{R^2-x^2}+R^2-x^2\right)dx\right)\right]$$
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
