@@ -11,7 +11,7 @@
 
 \begin{document}
 
-\title{Math - Devoir Formatif}
+\title{\textbf{Math - Devoir Formatif}}
 \author{Hovinne Noé}
 \date{}
 \maketitle
@@ -267,38 +267,105 @@ $$= \pi h \times \left( {1\over{2}}a^2 + {1\over{2}}b^2 + {1\over{6}}h^2 \right)
 $$={1\over{6}} \pi h \times (3a^2 + 3b^2 + h^2 )$$
 $$={\pi h^3\over{6}} + {\pi h (a^2+b^2)\over{2}}$$
 
-\center{cqfd.}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
-%----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{f. Un \textit{anneau sphérique} est le volume engendré par la rotation d'un segment circulaire autour d'un diamètre qui ne le traverse pas. A partir des formules des deux volumes déjà étudiés, déduire que le volume $V$ de l'anneau sphérique engendré par la rotation autour de l'axe $Ox$ de la surface est donné par $\displaystyle{V={\pi h\over{6}}|}$MN$\displaystyle{|^2}$}\vspace{0.5cm}
-
-\newpage
-%----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{f. Un \textit{secteur sphérique} est un volume engendré par la rotation d'un secteur circulaire autour d'un diamètre qui ne le traverse pas. Montrer que le volume $V$ du secteur sphérique engendré par la rotation autour de l'axe $Ox$ de la surface est donné par $\displaystyle{V={2\pi R^2 h \over{3}}}$}
-
-%----------------------------------------------------------------------------------------------------------------------------------------
 \begin{center}
-\vspace{1cm}Réalisé en \LaTeX\vspace{0.2cm}
+cqfd.
+\end{center}
 
-Code source : https://github.com/noehov/coursmath6
+%----------------------------------------------------------------------------------------------------------------------------------------
+\section*{Exercice 42 (p. 161) : château d'eau}\vspace{0.2cm}
+
+\flushleft Le réservoir sphérique d'un château d'eau a un rayon de 6 $m$.\vspace{0.1cm}
+
+a. Calculer, en $m^3$, la capacité maximum de ce réservoir.
+
+$$V = {\pi \times 4R^2\over{3}} = {\pi \times 4.6^2\over{3}} = 904,77 m^3$$\vspace{0.1cm}
+
+b. Calculer, en $m^3$, le volume d'eau contenu dans la partie sphérique de ce réservoir lorsque la hauteur de l'eau y est
+
+\hspace{1cm}1) de 4 $m$ ;
+
+$$V=\pi \times \int\limits_{-6}^{-2} \left( \sqrt{6^2-x^2} \right)^2dx$$
+$$=\pi \times \int\limits_{-6}^{-2} (36-x^2)dx$$
+$$=\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{-2}$$
+$$=\pi \times \frac{224}{3}$$
+$$=234,572251 m^3$$
+
+\newpage
+%----------------------------------------------------------------------------------------------------------------------------------------
+
+\hspace{1cm}2) de 7 $m$ ;
+
+$$V=\pi \times \int\limits_{-6}^{1} \left( \sqrt{6^2-x^2} \right)^2dx$$
+$$=\pi \times \int\limits_{-6}^{1} (36-x^2)dx$$
+$$=\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{1}$$
+$$=\pi \times \frac{539}{3}$$
+$$=564,4394801 m^3$$
+
+\hspace{1cm}3) de $x$ $m$ ($0 \leq x \leq 12$).
+
+$$V=\pi \times \int\limits_{-6}^{x-6} \left( \sqrt{6^2-x^2} \right)^2dx$$
+$$=\pi \times \int\limits_{-6}^{x-6} (36-x^2)dx$$
+$$=\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{x-6}$$
+$$=\pi \times \left( -\frac{(x-6)^3}{3}+36x-72 \right)$$
+
+\begin{figure}[h]
+    \textit{\caption{$f(x)=\sqrt{36-x^2}$}}\vspace{1cm}
+    \centering
+    \includegraphics[width=16cm, height=10cm]{assets/ex42-schema.png}
+\end{figure}
+
+\newpage
+%----------------------------------------------------------------------------------------------------------------------------------------
+\section*{Exercice 16 (p. 232) : l'échelle}\vspace{0.2cm}
+
+\begin{flushleft}
+a. Une échelle longue de 10 mètres est appuyée contre un mur et glisse sur le sol : le pied de l'échelle s'éloigne
+
+\hspace{13pt}du pied du mur et son sommet descend le long du mur jusqu'à ce que l'échelle soit couchée sur le sol.\vspace{0.1cm}
+
+\hspace{13pt}Détermine la trajectoire du point $M$ situé au milieu de l'échelle lorsque celle-ci passe de la position verticale
+
+\hspace{13pt}à la position horizontale.
+\end{flushleft}
+
+\begin{figure}[h]
+    \textit{\caption{La trajectoire du point $M$ est un arc de cercle de centre d'équation $C \equiv x^2+y^2=5$}}\vspace{0.2cm}
+    \centering
+    \includegraphics[width=7.5cm, height=7.5cm]{assets/ex16-a-schema.png}
+\end{figure}
+
+%----------------------------------------------------------------------------------------------------------------------------------------
+\begin{flushleft}
+b. Dans la même situation, déterminer la trajectoire du point $P$ situé au quart de l'échelle à partir du sommet
+
+\hspace{13pt}lorsque celle-ci passe de la position verticale à la position horizontale.
+\end{flushleft}
+
+\begin{figure}[h]
+    \textit{\caption{La trajectoire du point $P$ se trouve sur une ellipse d'équation $E_P \equiv 900x^2+100y^2=5624$}}\vspace{0.2cm}
+    \centering
+    \includegraphics[width=7.5cm, height=7.5cm]{assets/ex16-b-schema.png}
+\end{figure}
+\newpage
+%----------------------------------------------------------------------------------------------------------------------------------------
+\begin{flushleft}
+c. Même question avec le point $Q$ situé au quart de l'échelle à partir du pied.\vspace{0.1cm}
+\end{flushleft}
+
+\begin{figure}[h]
+    \textit{\caption{La trajectoire du point $Q$ se trouve sur une ellipse d'équation $E_Q \equiv 100x^2+900y^2=5624$}}\vspace{0.2cm}
+    \centering
+    \includegraphics[width=7.5cm, height=7.5cm]{assets/ex16-c-schema.png}
+\end{figure}
+
+\vspace{12.5cm}
+
+\begin{center}
+\vspace{1cm}Ce travail a été réalisé en \LaTeX . \vspace{0.2cm}
+
+Les figures 4, 6, 7, 8 et 9 ont été construites sur \textit{GeoGebra}.\vspace{0.2cm}
+
+Code source disponible sur \textit{GitHub} à cette adresse : https://github.com/noehov/coursmath6
 \end{center}
 
 \end{document}
