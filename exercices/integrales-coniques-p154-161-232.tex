@@ -19,7 +19,7 @@
 \section*{Exercice 30 (p. 154) : calculer le volume d'un solide}\vspace{0.2cm}
 
 %----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{a.1) Établir la formule permettant de calculer le volume d'un cylindre droit de rayon \textit{R} et de hauteur \textit{h}}
+\flushleft \textbf{a.1) Établir la formule permettant de calculer le volume d'un cylindre droit de rayon $R$ et de hauteur $h$}
 \begin{figure}[h]
     \textit{\caption{}}
     \centering
@@ -52,7 +52,7 @@ $$\pi \times \int\limits_a^b R^2 dx = \pi \times R^2 \times h$$
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{a.2) Établir la formule permettant de calculer le volume d'une sphère de rayon \textit{R}}
+\flushleft \textbf{a.2) Établir la formule permettant de calculer le volume d'une sphère de rayon $R$}
 
 \begin{figure}[h]
     \textit{\caption{}}\vspace{0.2cm}
@@ -83,15 +83,14 @@ $$\pi\times\int\limits_{-R}^R({R^2-x^2})dx = \pi\times{4R^3\over{3}}$$
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{a.3) Établir la formule permettant de calculer le volume d'un cône droit de rayon \textit{R} et de hauteur \textit{h}}
+\flushleft \textbf{a.3) Établir la formule permettant de calculer le volume d'un cône droit de rayon $R$ et de hauteur $h$}
 
 \begin{figure}[h]
     \textit{\caption{}}\vspace{0.2cm}
     \centering
-    \includegraphics[width=4cm, height=4cm]{assets/ex30-a3-schema.png}
+    \includegraphics[width=6cm, height=6cm]{assets/ex30-a3-schema.png}
 \end{figure}
-Trouver la fonction est plus long pour ce cas-ci.
-Nous savons que $f(a)=f(0)=R$ et que $f(b)=f(h)=0$\vspace{0.5cm}
+Pour trouver la fonction, nous savons que $f(a)=f(0)=R$ et que $f(b)=f(h)=0$\vspace{0.5cm}
 
 La fonction se présente donc sous la forme $\displaystyle{f(x)={y_b-y_a\over{x_b-x_a}}\times{x+R}}$, ce qui revient à $\displaystyle{f(x)={-Rx\over{h}}+R}$\vspace{0.2cm}
 
@@ -128,11 +127,11 @@ $$\pi\times\int\limits_0^h\left({R^2x^2\over{h^2}}-{2R^2x\over{h}}+R^2\right)dx=
 Le rapport est égal à $$\displaystyle{\pi \times R^2 \times h \over{3}} \times {1\over{\pi \times R^2 \times h}}={1\over{3}}$$
 
 %----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{c. Comparer le volume d'une sphère de rayon \textit{R} et celui du cylindre qui lui est circonscrit}\vspace{0.5cm}
+\flushleft \textbf{c. Comparer le volume d'une sphère de rayon $R$ et celui du cylindre qui lui est circonscrit}\vspace{0.5cm}
 
-Le volume d'une sphère de rayon R est de $\pi\times{4R^3\over{3}}$\vspace{0.5cm}
+Le volume d'une sphère de rayon R est égal à $\displaystyle\pi\times{4R^3\over{3}}$\vspace{0.5cm}
 
-Le cylindre qui lui est circonscrit possède, par définition, le même rayon \textit{R}, qui est égal à sa hauteur \textit{h}.\vspace{0.5cm}
+Le cylindre qui lui est circonscrit possède le même rayon $R$, qui est égal à sa hauteur \textit{h}.\vspace{0.5cm}
 
 Son volume est donc de $\pi \times R^2 \times h=\pi \times R^3$ \vspace{0.5cm}
 
@@ -141,9 +140,9 @@ Le rapport entre le volume de la sphère et le volume du cylindre qui lui est ci
 $$\displaystyle{\pi\times4R^3\over{3}}\times{1\over{\pi \times R^3}}={4\over{3}}$$
 
 %----------------------------------------------------------------------------------------------------------------------------------------
-\flushleft \textbf{d. Un tore est un solide de révolution engendré par un cercle tournant autour d'une droite située dans son plan mais ne passant pas par son centre. Montre que le volume V d'un tore engendré par le mouvement d'un cercle de rayon \textit{R} et dont le centre est situé à une distance $a$ de la droite autour de laquelle il tourne, est donné par $V=2a\pi^2 R^2$.}\vspace{0.5cm}
+\flushleft \textbf{d. Un tore est un solide de révolution engendré par un cercle tournant autour d'une droite située dans son plan mais ne passant pas par son centre. Montre que le volume $V$ d'un tore engendré par le mouvement d'un cercle de rayon $R$ et dont le centre est situé à une distance $a$ de la droite autour de laquelle il tourne, est donné par $V=2a\pi^2 R^2$.}\vspace{0.5cm}
 
-Pour réaliser cet exercice, nous avons besoin des fonctions $f(x)=\sqrt{R^2-x^2}+a$ et $g(x)=-\sqrt{R^2-x^2}+a$
+Pour réaliser cet exercice, nous avons besoin des fonctions $\displaystyle f(x)=\sqrt{R^2-x^2}+a$ et $g(x)=-\sqrt{R^2-x^2}+a$
 
 \begin{figure}[h]
     \textit{\caption{Ici, $a=4$ et $R=2$}}\vspace{0.2cm}
@@ -166,32 +165,32 @@ $$=\pi\times\left[\left(\int\limits_{-R}^R \left(a^2+2a\sqrt{R^2-x^2}+R^2-x^2\ri
 
 \hspace{0.8cm} Passage à l'intégrale indéfinie\vspace{0.2cm}
 
-$$\int (a^2+2a\sqrt{R^2-x^2}+R^2-x^2)dx$$\vspace{0.01cm}
+$$\int \left(a^2+2a\sqrt{R^2-x^2}+R^2-x^2\right)dx$$\vspace{0.01cm}
 
 \hspace{0.8cm} Décomposition en somme d'intégrales\vspace{0.2cm}
 
-$$=\int a^2dx + 2a\int(\sqrt{R^2-x^2})dx + \int R^2dx - \int x^2dx$$
+$$=\int a^2dx + 2a\int\left(\sqrt{R^2-x^2}\right)dx + \int R^2dx - \int x^2dx$$
 
-$$=a^2x + aR^2\arcsin({x\over{R}}) + ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}} + c$$
+$$=a^2x + aR^2\arcsin\left({x\over{R}}\right) + ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}} + c$$
 
 \begin{center}
-\hspace{0.8cm} Prenons $\displaystyle{F(x)=a^2x + aR^2\arcsin({x\over{R}}) + ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}}}$ comme primitive de $f(x)$\vspace{0.2cm}
+\hspace{0.8cm} Prenons $\displaystyle{F(x)=a^2x + aR^2\arcsin\left({x\over{R}}\right) + ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}}}$ comme primitive de $f(x)$\vspace{0.2cm}
 \end{center}
 
 1.2 Recherche de $G(x)$ \vspace{0.5cm}
 
 \hspace{0.8cm} Passage à l'intégrale indéfinie\vspace{0.2cm}
 
-$$\int (a^2-2a\sqrt{R^2-x^2}+R^2-x^2)dx$$\vspace{0.01cm}
+$$\int \left(a^2-2a\sqrt{R^2-x^2}+R^2-x^2\right)dx$$\vspace{0.01cm}
 
 \hspace{0.8cm} Décomposition en somme d'intégrales\vspace{0.2cm}
 
-$$=\int a^2dx - 2a\int(\sqrt{R^2-x^2})dx + \int R^2dx - \int x^2dx$$
+$$=\int a^2dx - 2a\int\left(\sqrt{R^2-x^2}\right)dx + \int R^2dx - \int x^2dx$$
 
-$$=a^2x - aR^2\arcsin({x\over{R}}) - ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}} + c$$
+$$=a^2x - aR^2\arcsin\left({x\over{R}}\right) - ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}} + c$$
 
 \begin{center}
-\hspace{0.8cm} Prenons $\displaystyle{G(x)=a^2x - aR^2\arcsin({x\over{R}}) - ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}}}$ comme primitive de $g(x)$\vspace{0.2cm}
+\hspace{0.8cm} Prenons $\displaystyle{G(x)=a^2x - aR^2\arcsin\left({x\over{R}}\right) - ax\sqrt{R^2-x^2} + R^2x - {x^3\over{3}}}$ comme primitive de $g(x)$\vspace{0.2cm}
 \end{center}
 
 \textbf{2. Résolution des deux intégrales définies}\vspace{0.5cm}
@@ -223,7 +222,7 @@ $$=2aR^2\pi^2$$
 
 \center{cqfd.}
 
-\flushleft \textbf{e. Un \textit{segment sphérique} est une portion de sphère coupée par deux plans parallèles. Montrer que le volume $V$ du segment sphérique de largueur h et de rayon $a$ et $b$, engendré par la rotation autour de l'axe $Ox$ de la surface est donné par}
+\flushleft \textbf{e. Un \textit{segment sphérique} est une portion de sphère coupée par deux plans parallèles. Montrer que le volume $V$ du segment sphérique de largeur $h$ et de rayon $a$ et $b$, engendré par la rotation autour de l'axe $Ox$ de la surface est donné par}
 $$\displaystyle{V={\pi h^3\over{6}}+{\pi h(a^2+b^2)\over{2}}}$$
 Afin de réaliser cet exercice, j'ai utilisé les sources suivantes:
 \begin{center}
@@ -238,7 +237,7 @@ La technique de démonstration diffère de celle qui nous est demandée dans le 
 \begin{center}
 Appelons $R$ le rayon de la sphère et $h$ la hauteur du segment. 
 
-Le rayon des cercles supérieur et inférieur sont appelés respectivement $a$ et $b$. 
+Le rayon des cercles inférieur et supérieur sont appelés respectivement $a$ et $b$. 
 
 Appelons $d$ la distance entre le centre de la sphère et le plus grand diamètre du segment. 
 
@@ -253,7 +252,7 @@ $$=\pi \times \left[ \left( R^2(d+h) - {(d+h)^3\over{3}} \right) - \left( R^2d -
 $$=\pi \times \left[ R^2h - {1\over{3}} \left( d^3+3d^2h+3dh^2+h^3-d^3 \right) \right]$$
 $$=\pi h \times \left( R^2-d^2-hd-{h^2\over{3}} \right)$$\vspace{0.1cm}
 
-Grâce à Pythagore, nous pouvons trouver certaines égalités:
+Grâce à Pythagore, nous trouvons les égalités suivantes:
 
 $$a=\sqrt{R^2-d^2}$$
 $$b=\sqrt{R^2-(d+h)^2} = \sqrt{R^2-d^2-2dh-h^2}$$
@@ -284,32 +283,38 @@ b. Calculer, en $m^3$, le volume d'eau contenu dans la partie sphérique de ce r
 
 \hspace{1cm}1) de 4 $m$ ;
 
-$$V=\pi \times \int\limits_{-6}^{-2} \left( \sqrt{6^2-x^2} \right)^2dx$$
-$$=\pi \times \int\limits_{-6}^{-2} (36-x^2)dx$$
-$$=\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{-2}$$
-$$=\pi \times \frac{224}{3}$$
-$$=234,572251 m^3$$
+\begin{eqnarray*}
+V&=&\pi \times \int\limits_{-6}^{-2} \left( \sqrt{6^2-x^2} \right)^2dx\\
+&=&\pi \times \int\limits_{-6}^{-2} (36-x^2)dx\\
+&=&\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{-2}\\
+&=&\pi \times \frac{224}{3}\\
+&\approx&\pm 234,572251 m^3
+\end{eqnarray*}
 
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
 
 \hspace{1cm}2) de 7 $m$ ;
 
-$$V=\pi \times \int\limits_{-6}^{1} \left( \sqrt{6^2-x^2} \right)^2dx$$
-$$=\pi \times \int\limits_{-6}^{1} (36-x^2)dx$$
-$$=\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{1}$$
-$$=\pi \times \frac{539}{3}$$
-$$=564,4394801 m^3$$
+\begin{eqnarray*}
+V&=&\pi \times \int\limits_{-6}^{1} \left( \sqrt{6^2-x^2} \right)^2dx\\
+&=&\pi \times \int\limits_{-6}^{1} (36-x^2)dx\\
+&=&\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{1}\\
+&=&\pi \times \frac{539}{3}\\
+&\approx&\pm 564,4394801 m^3
+\end{eqnarray*}
 
 \hspace{1cm}3) de $x$ $m$ ($0 \leq x \leq 12$).
 
-$$V=\pi \times \int\limits_{-6}^{x-6} \left( \sqrt{6^2-x^2} \right)^2dx$$
-$$=\pi \times \int\limits_{-6}^{x-6} (36-x^2)dx$$
-$$=\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{x-6}$$
-$$=\pi \times \left( -\frac{(x-6)^3}{3}+36x-72 \right)$$
+\begin{eqnarray*}
+V&=&\pi \times \int\limits_{-6}^{x-6} \left( \sqrt{6^2-x^2} \right)^2dx\\
+&=&\pi \times \int\limits_{-6}^{x-6} (36-x^2)dx\\
+&=&\pi \times \left[ 36x-{x^3\over{3}} \right]_{-6}^{x-6}\\
+&=&\pi \times \left( -\frac{(x-6)^3}{3}+36x-72 \right)
+\end{eqnarray*}
 
 \begin{figure}[h]
-    \textit{\caption{$f(x)=\sqrt{36-x^2}$}}\vspace{1cm}
+    \textit{\caption{$\displaystyle f(x)=\sqrt{36-x^2}$}}\vspace{1cm}
     \centering
     \includegraphics[width=16cm, height=10cm]{assets/ex42-schema.png}
 \end{figure}
@@ -329,7 +334,7 @@ a. Une échelle longue de 10 mètres est appuyée contre un mur et glisse sur le
 \end{flushleft}
 
 \begin{figure}[h]
-    \textit{\caption{La trajectoire du point $M$ est un arc de cercle de centre d'équation $C \equiv x^2+y^2=5$}}\vspace{0.2cm}
+    \textit{\caption{La trajectoire du point $M$ est un arc de cercle d'équation $\displaystyle C_M \equiv x^2+y^2=5$}}\vspace{0.2cm}
     \centering
     \includegraphics[width=7.5cm, height=7.5cm]{assets/ex16-a-schema.png}
 \end{figure}
@@ -342,18 +347,18 @@ b. Dans la même situation, déterminer la trajectoire du point $P$ situé au qu
 \end{flushleft}
 
 \begin{figure}[h]
-    \textit{\caption{La trajectoire du point $P$ se trouve sur une ellipse d'équation $E_P \equiv 900x^2+100y^2=5624$}}\vspace{0.2cm}
+    \textit{\caption{La trajectoire du point $P$ se trouve sur une ellipse d'équation $\displaystyle E_P \equiv 900x^2+100y^2=5624$}}\vspace{0.2cm}
     \centering
     \includegraphics[width=7.5cm, height=7.5cm]{assets/ex16-b-schema.png}
 \end{figure}
 \newpage
 %----------------------------------------------------------------------------------------------------------------------------------------
 \begin{flushleft}
-c. Même question avec le point $Q$ situé au quart de l'échelle à partir du pied.\vspace{0.1cm}
+c. Même question avec le point $Q$ situé au quart de l'échelle à partir du pied.
 \end{flushleft}
 
 \begin{figure}[h]
-    \textit{\caption{La trajectoire du point $Q$ se trouve sur une ellipse d'équation $E_Q \equiv 100x^2+900y^2=5624$}}\vspace{0.2cm}
+    \textit{\caption{La trajectoire du point $Q$ se trouve sur une ellipse d'équation $\displaystyle E_Q \equiv 100x^2+900y^2=5624$}}\vspace{0.2cm}
     \centering
     \includegraphics[width=7.5cm, height=7.5cm]{assets/ex16-c-schema.png}
 \end{figure}
@@ -363,7 +368,7 @@ c. Même question avec le point $Q$ situé au quart de l'échelle à partir du p
 \begin{center}
 \vspace{1cm}Ce travail a été réalisé en \LaTeX . \vspace{0.2cm}
 
-Les figures 4, 6, 7, 8 et 9 ont été construites sur \textit{GeoGebra}.\vspace{0.2cm}
+Les figures 3, 4, 6, 7, 8 et 9 ont été construites sur \textit{GeoGebra}.\vspace{0.2cm}
 
 Code source disponible sur \textit{GitHub} à cette adresse : https://github.com/noehov/coursmath6
 \end{center}
