@@ -1,4 +1,4 @@
-# Exercices de mathématiques
+# Cours de mathématiques
 
 * Intégrales et primitives
 * Coniques
