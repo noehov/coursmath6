@@ -1,0 +1,82 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage \hspace{1pt} sur \pageref{LastPage}}
+\begin{document}
+\title{Math : Probabilités - Partie III : Analyse combinatoire}
+\author{Hovinne Noé}
+\date{04.06.20}
+\maketitle
+\section*{Exercice 1}
+Pour l'oral d'un examen, un professeur a préparé 30 questions écrites chacune sur une feuille de papier. Parmi ces 30 questions, 10 concernent les probabilités, 12 les statistiques et 8 l'analyse combinatoire. L'élève doit choisir 3 questions parmi les 30 proposées.\vspace{0,2cm}
+
+a) La probabilité qu'il ait tiré trois questions de probabilités est égale à :
+
+$$\frac{C_{10}^3}{C_{30}^3}=\frac{120}{4060}\approx 3\%$$
+
+b) La probabilité qu'il ait tiré une question de probabilité et deux de statistiques est égale à :
+
+$$\frac{C_{12}^2\cdot C_{10}^1}{C_{30}^3}=\frac{660}{4060}\approx16,256\%$$
+
+\section*{Exercice 2}
+Par inadvertance, Paul a mélangé les 20 ampoules électriques triées par son père. Il sait que dans le lot, il y a 5 ampoules défectueuses. Il retire trois ampoules au hasard.\vspace{0,2cm}
+
+a) La probabilité qu'une seule des trois ampoules soit défectueuse est égale à :
+
+$$\frac{C_5^1\cdot C_{15}^2}{C_{20}^3}=\frac{525}{1140}\approx46,05\%$$
+
+b) La probabilité qu'au moins une des trois ampoules soit défectueuse est égale à :
+
+$$\frac{C_5^1\cdot C_{15}^2+C_5^2\cdot C_{15}^1+C_5^3}{C_{20}^3}=\frac{525+150+10}{1140}\approx60,09\%$$
+
+c) La probabilité qu'au maximum une des trois ampoules soit défectueuse est égale à :
+
+$$\frac{C_{15}^3+C_5^1\cdot C_{15}^2}{C_{20}^3}=\frac{525+455}{1140}\approx85,96\%$$
+
+\section*{Exercice 3}
+On tire au hasard 4 cartes d'un jeu de 52 cartes.\vspace{0,2cm}
+
+a) La probabilité d'avoir les 4 as est égale à :
+
+$$\frac{C_4^4}{C_{52}^4}=C_4^4\times\frac{48!4!}{52!}=1\times \frac{1}{270725}\approx 0,000369\%$$
+
+b) La probabilité d'avoir 4 cartes de même couleur est égale à :
+
+$$\frac{C_{13}^4}{C_{52}^4}=C_{13}^4\times\frac{48!4!}{52!}=715\times\frac{1}{270725}=\frac{11}{4165}\approx6,34\%$$
+
+c) La probabilité d'avoir 4 images est égale à :
+
+$$\frac{C_{12}^4}{C_{52}^4}=C_{12}^4\times\frac{48!4!}{52!}=495\times\frac{1}{270725}=\frac{99}{54145}\approx0,1828\%$$
+
+\newpage
+
+\section*{Exercice 4}
+
+\hspace{16pt}a) Au lotto belge, vous devez choisir 6 numéros dans une grille qui contient 45 numéros (de 1 à 45). 
+
+Vous gagnez au lotto au rang 1, si vous avez les 6 bons numéros !
+
+La probabilité de gagner au rang 1 est égale à :
+
+$$\frac{C_6^6}{C_{45}^6}=\frac{1}{C_{45}^6}=\frac{1}{8145060}\approx0,00001228\%$$
+
+b) Un numéro complémentaire est tiré également et vous gagnez au rang 2, si vous avez 5 bons numéros sur 
+
+les 6 numéros tirés et le numéro complémentaire !
+
+La probabilité de gagner au rang 2 est égale à :
+
+$$\frac{C_7^5}{C_{45}^7}=\frac{21}{C_{45}^7}=\frac{21}{45379620}\approx0,00004628\%$$
+\vspace{18cm}
+\begin{center}
+\vspace{1cm}Ce travail a été réalisé en \LaTeX . \vspace{0.2cm}
+\end{center}
+
+\end{document}
