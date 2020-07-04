@@ -1,0 +1,185 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage \hspace{1pt} sur \pageref{LastPage}}
+\begin{document}
+\title{Math : Probabilités - Partie IV : Variables aléatoires}
+\author{Hovinne Noé}
+\date{13.06.20}
+\maketitle
+\section*{Exercice 1, page 5}
+On tire au hasard une carte d’un jeu de 32 cartes. Soit X la variable aléatoire qui
+associe à une carte, la valeur 4 si c’est un as, 3 pour un roi, 2 pour une dame, 1 pour
+un valet et 0 pour le reste.
+
+$$P(X=4)=\frac{4}{32}=\frac{1}{8}$$
+$$P(X=3)=\frac{4}{32}=\frac{1}{8}$$
+$$P(X=2)=\frac{4}{32}=\frac{1}{8}$$
+$$P(X=1)=\frac{4}{32}=\frac{1}{8}$$
+$$P(X=0)=\frac{16}{32}=\frac{1}{2}$$
+
+
+$$E(X)=4\times\frac{1}{8}+3\times\frac{1}{8}+2\times\frac{1}{8}+1\times\frac{1}{8}=\frac{\textbf{5}}{\textbf{4}}$$
+
+$$V(X)=\left[4^2\times\frac{1}{8}+3^2\times\frac{1}{8}+2^2\times\frac{1}{8}+1^2\times\frac{1}{8}\right]-E^2(X)=\frac{30}{8}-\frac{25}{16}=\frac{\textbf{35}}{\textbf{16}}$$
+
+$$\sigma(X)=\sqrt{\frac{35}{16}}=\frac{\sqrt{\textbf{35}}}{\textbf{4}}$$
+\section*{Exercice 2, page 6}
+On jette deux dés bien équilibrés. X désigne la somme des points obtenus.
+
+$$P(X=12)=p_1=\frac{1}{36}$$
+$$P(X=11)=p_2=\frac{2}{36}$$
+$$P(X=10)=p_3=\frac{3}{36}$$
+$$P(X=9)=p_4=\frac{4}{36}$$
+$$P(X=8)=p_5=\frac{5}{36}$$
+$$P(X=7)=p_6=\frac{6}{36}$$
+$$P(X=6)=p_7=\frac{5}{36}$$
+$$P(X=5)=p_8=\frac{4}{36}$$
+$$P(X=4)=p_9=\frac{3}{36}$$
+
+\newpage
+$$P(X=3)=p_{10}=\frac{2}{36}$$
+$$P(X=2)=p_{11}=\frac{1}{36}$$
+$$E(X)=\sum_{i=1}^{11}x_i.p_i=\textbf{7}$$
+$$V(X)=\sum_{i=1}^{11}(x_i^2.p_i)-E^2(X)=\frac{\textbf{35}}{\textbf{6}}$$
+$$\sigma(X)=\frac{\sqrt{\textbf{210}}}{\textbf{6}}$$
+\section*{Exercice 3, page 6}
+On tire au hasard 1 échantillon de 3 articles dans une boîte de 12 articles dont 3 sont défectueux. X est la variable aléatoire qui s'intéresse au nombre de pièces défectueuses.
+
+$$P(X=1)=p_1=C_3^1\times\frac{3.9.8}{12.11.10}=\frac{27}{55}$$
+$$P(X=2)=p_2=C_3^2\times\frac{3.2.9}{12.11.10}=\frac{27}{220}$$
+$$P(X=3)=p_3=C_3^3\times\frac{3.2.1}{12.11.10}=\frac{6}{1320}$$
+$$P(X=0)=\frac{9.8.7}{12.11.10}=\frac{21}{55}$$
+$$E(X)=\sum_{i=1}^3x_i.p_i=\frac{\textbf{3}}{\textbf{4}}$$
+$$V(X)=\sum_{i=1}^3(x_i^2.p_i)-E^2(X)=\frac{\textbf{81}}{\textbf{176}}$$
+$$\sigma(X)=\frac{\textbf{9}\sqrt{\textbf{11}}}{\textbf{44}}$$
+\section*{Exercice 4, page 6}
+Un groupe comprend 5 garçons et 3 filles. On choisit 4 personnes au hasard. X
+désigne le nombre de filles.
+
+$$P(X=1)=p_1=C_4^1\times\frac{3.5.4.3}{8.7.6.5}=\frac{3}{7}$$
+$$P(X=2)=p_2=C_4^2\times\frac{3.2.5.4}{8.7.6.5}=\frac{3}{7}$$
+$$P(X=3)=p_3=C_4^3\times\frac{3.2.1.5}{8.7.6.5}=\frac{1}{14}$$
+$$P(X=0)=\frac{5.4.3.2}{8.7.6.5}=\frac{1}{14}$$
+$$E(X)=\sum_{i=1}^3x_i.p_i=\frac{\textbf{3}}{\textbf{2}}$$
+$$V(X)=\sum_{i=1}^3(x_i^2.p_i)-E^2(X)=\frac{\textbf{15}}{\textbf{28}}$$
+$$\sigma(X)=\frac{\sqrt{\textbf{105}}}{\textbf{14}}$$
+
+\newpage
+\section*{Exercice 1, page 10}
+On considère les familles de 10 enfants. On suppose que la probabilité d'avoir une
+fille ou un garçon est identique.
+
+a. La probabilité qu'une famille comporte deux filles est égale à :
+
+$$P(X=2)=p_2=C_{10}^2.\left(\frac{1}{2}\right)^{10}=\frac{45}{1024}\approx\textbf{4,39\%}$$
+
+b. La probabilité qu'une famille ne comporte pas plus de deux garçons est égale à :
+
+$$P(X=2)+P(X=1)+P(X=0)=\frac{45}{1024}+\left[C_{10}^1.\left(\frac{1}{2}\right)^{10}\right]+\left[C_{10}^0.\left(\frac{1}{2}\right)^{10}\right]=\frac{7}{128}\approx\textbf{5,47\%}$$
+
+c. La probabilité qu'une famille comporte au minimum deux filles est égale à :
+
+$$\sum_{i=2}^{10}C_{10}^i.0,5^{10}=\frac{1013}{1024}\approx\textbf{98,93\%}$$
+\section*{Exercice 2, page 10}
+Une urne contient 10 boules blanches et 5 boules noires indiscernables au toucher.
+On effectue 20 tirages avec remise de la boule dans l’urne après avoir noté sa
+couleur.
+
+a. La probabilité d'obtenir 7 boules blanches et 13 boules noires est égale à :
+
+$$C_{20}^7.\left(\frac{10}{15}\right)^7.\left(\frac{5}{15}\right)^{13}\approx\textbf{0,2858\%}$$
+
+b. La probabilité d'obtenir 13 boules blanches et 7 boules noires est égale à :
+
+$$C_{20}^{13}.\left(\frac{10}{15}\right)^{13}.\left(\frac{5}{15}\right)^7\approx\textbf{18,21\%}$$
+\section*{Exercice 3, page 11}
+On sait qu'il y aura 40\% d'échec, à la première session.
+
+a. En prenant cinq candidats au hasard, la probabilité qu'aucun des cinq ne réussisse est égale à :
+
+$$C_5^0.0,4^5=\textbf{1,024\%}$$
+
+b. En prenant cinq candidats au hasard, la probabilité que les cinq réussissent est égale à :
+
+$$C_5^5.0,6^5=\textbf{7,776\%}$$
+
+c. En prenant cinq candidats au hasard, la probabilité qu'au moins deux réussissent est égale à :
+
+$$\sum_{i=2}^5C_5^i.0.6^i.0,4^{5-i}\approx\textbf{91,296\%}$$
+\section*{Exercice 4, page 11}
+Un caractère héréditaire a 58\% de chances d'être transmis des parents aux enfants. Considérons les familles de 4 enfants.
+
+a. La probabilité que ce caractère se manifeste chez tous les enfants est égale à :
+
+$$C_4^4.0,58^4\approx\textbf{11,32\%}$$
+
+b. La probabilité que ce caractère ne se manifeste chez aucun des enfants est égale à :
+
+$$C_4^0.0,42^4\approx\textbf{3,11\%}$$
+\newpage
+c. La probabilité que ce caractère ne se manifeste au plus chez trois d'entre eux est égale à :
+
+$$\sum_{i=0}^3C_4^i.0,58^i.0,42^{4-i}\approx\textbf{88,68\%}$$
+
+d. La probabilité que ce caractère se manifeste au moins chez deux d'entre eux est égale à :
+
+$$\sum_{i=2}^4C_4^i.0,58^i.0,42^{4-i}\approx\textbf{79,70\%}$$
+\section*{Exercice 5, page 11}
+La probabilité qu'un tireur atteigne une cible est de 0,25.
+
+a. En supposant qu'il tire 7 fois, la probabilité qu'il atteigne la cible au moins 2 fois est égale à :
+
+$$\sum_{i=2}^7C_7^i.0,25^i.0,75^{7-i}\approx\textbf{55,47\%}$$
+
+b. Pour que la probabilité d'atteindre la cible au moins une fois soit supérieure ou égale à $2/3$, quel est le 
+
+nombre de tirs que le tireur doit effectuer ?\vspace{2pt}
+
+$$P(X\geq1)\geq\frac{2}{3}\Leftrightarrow P(X=0)\leq\frac{1}{3}$$
+\begin{center} Or, on sait que
+$$P(X=0)=C_n^0.0,25^0.0,75^{n-0}$$
+Donc,
+$$C_n^0.0,25^0.0,75^{n-0}\leq\frac{1}{3}$$
+$$0,75^n\leq\frac{1}{3}\Leftrightarrow n\geq\textbf{4}$$
+Le nombre de tirs à réaliser est égal à \textbf{4}.\end{center}
+\section*{Exercice 1, page 25}
+La moyenne des capacités respiratoires d'un échantillon de 400 personnes du sexe masculin est de 3,7 L avec un écart-type de 0,7 L.
+
+Sachant que les capacités respiratoires sont distribuées suivant une loi normale, le nombre de personnes 
+
+ayant une capacité respiratoire comprise entre 3 L et 4,4 L que l'on peut s'attendre à trouver est égal à :
+
+$$P(3\leq X\leq 4,4)=0,68268949\approx 68,27\%$$
+
+$$0,68268949\times400=273,075796\approx \textbf{273}$$
+
+\section*{Exercice 2, page 25}
+Une étude faite par un fabricant de lampes électriques a montré que les durées des lampes se répartissent approximativement suivant une loi de Laplace-Gauss, la moyenne de vie étant de 1200 heures et l’écart-type étant de 180 heures. On considère une installation de 10 000 lampes neuves.
+
+a. Le nombre d'ampoules que l'on peut prévoir hors d'usage au bout de 1000 heures est égal à :
+
+$$P(X\leq1000)=P(-\infty\leq X\leq1000)=0,13326026\approx13,33\%$$
+
+$$0,13326026\times10000=1332,6026\approx\textbf{1333}$$
+\newpage
+
+b. Le nombre d'ampoules que l'on peut prévoir hors d'usage entre 1000 et 1500 heures d'utilisation est égal 
+
+à :
+
+$$P(1000\leq X\leq1500)=0,81894938\approx81,89\%$$
+
+$$0,81894938\times10000=8189,4938\approx\textbf{8189}$$
+\vspace{21cm}
+\begin{center}
+\vspace{1cm}Ce travail a été réalisé en \LaTeX . \vspace{0.2cm}
+\end{center}
+\end{document}
